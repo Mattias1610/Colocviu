@@ -23,7 +23,19 @@ public class Main {
             judet.add(new Judet(codISO, nume, regiune, locuitori, suprafata));
             ModAfisare afisare = new Consola();
             afisare.Afiseaza(judet);
+
+            ModAfisare afisareFisier = new Fisier("/Users/mattias/Desktop/labwork01/Colocviu/output.txt");
+            afisareFisier.Afiseaza(judet);
         }
         sc.close();
+    }
+    public static ArrayList<Judet> gasireJudetDupaCod(ArrayList<Judet> judete, String cod) {
+        ArrayList<Judet> result = new ArrayList<>();
+        for (Judet j : judete) {
+            if (j.getCod().equalsIgnoreCase(cod)) {
+                result.add(j);
+            }
+        }
+        return result;
     }
 }

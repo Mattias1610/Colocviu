@@ -10,6 +10,26 @@ public class Judet {
     public int nrLocuitori;
     public int suprafata;
 
+    public String getCod() {
+        return cod;
+    }
+
+    public String getNumeJudet() {
+        return numeJudet;
+    }
+
+    public String getRegiuneDezvoltare() {
+        return regiuneDezvoltare;
+    }
+
+    public int getNrLocuitori() {
+        return nrLocuitori;
+    }
+
+    public int getSuprafata() {
+        return suprafata;
+    }
+
     public Judet(String cod, String numeJudet, String regiuneDezvoltare, int nrLocuitori, int suprafata ){
         this.cod = cod;
         this.numeJudet = numeJudet;
@@ -18,8 +38,8 @@ public class Judet {
         this.suprafata = suprafata;
     }
 
-
 }
+
 
 interface ModAfisare{
     void Afiseaza(ArrayList<Judet> judete);
@@ -41,16 +61,15 @@ class Fisier implements ModAfisare{
         this.numeFisier = numeFisier;
     }
     @Override
-    public void Afiseaza(ArrayList<Judet> judete){
+    public void Afiseaza(ArrayList<Judet> judet){
         try(PrintWriter writer = new PrintWriter(numeFisier)){
             writer.println("Judete");
-            for(Judet j : judete){
-                writer.println(j.toString());
+            for(Judet j : judet){
+                writer.println(j.numeJudet + " (" + j.cod + ") - Regiunea: " + j.regiuneDezvoltare + " | Locuitori: " + j.nrLocuitori + " | Suprafață: " + j.suprafata + " km");
             }
         }
         catch (Exception e){
             System.out.println("Eroare");
         }
-
     }
 }

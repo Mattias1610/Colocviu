@@ -1,0 +1,8 @@
+Judete
+Giurgiu (GR) - Regiunea: SudMuntenia | Locuitori: 262066 | Suprafață: 3544 km
+Timis (TM) - Regiunea: Vest | Locuitori: 650533 | Suprafață: 8692 km
+CarasSeverin (CS) - Regiunea: Vest | Locuitori: 246588 | Suprafață: 8532 km
+Bucuresti (B) - Regiunea: BucurestiIlfov | Locuitori: 1716983 | Suprafață: 240 km
+Dolj (DJ) - Regiunea: SudVestOltenia | Locuitori: 599442 | Suprafață: 7425 km
+Sibiu (SB) - Regiunea: Centru | Locuitori: 388325 | Suprafață: 5432 km
+Neamt (NT) - Regiunea: NordEst | Locuitori: 454203 | Suprafață: 5897 km
